@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -21,7 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .block1 h1 {
@@ -32,9 +32,11 @@ body {
 
 .header {
   display: flex;
-  width: 1000px;
   justify-content: center;
   padding: 5px 25px;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 0px 235px;
 }
 
 .header div {
@@ -46,10 +48,13 @@ body {
   font-size: 18px;
   color: #e5e7eb;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .header .links {
   margin-left: auto;
+
+
 }
 
 .hero-wrapper {
@@ -72,15 +77,17 @@ body {
   padding: 25px;
 }
 
-.block1-content h1 {
-  margin-bottom: 0;
+#hero {
+  font-weight: 900;
+  font-size: 48px;
+  color: #f9faf8;
 }
 
 .block1-content p {
   margin: 0px;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #f9faf8;
+  color: #e5e7eb;
 }
 /*
   ========================
@@ -98,6 +105,11 @@ body {
   height: 200px;
   min-width: 200px;
   border-radius: 10px;
+}
+
+.block2 #info {
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .img-container {
@@ -137,6 +149,8 @@ body {
 
 .block3 .p1 {
   margin-bottom: 0;
+  font-style: italic;
+  font-weight: 300;
 }
 .block3 .author {
   margin-left: auto;
@@ -166,7 +180,7 @@ body {
   width: 1000px;
 }
 
-#textButton {
+button {
   align-self: center;
   margin: 35px;
   border: 2px solid white;
@@ -174,13 +188,17 @@ body {
   padding: 2px 12px;
   margin-left: auto;
   margin-right: 75px;
-  background: none;
+  background: #3882f6;
   color: #f9faf8;
 }
 
-#textButton:hover {
+button:hover {
   background: #f9faf8;
   color: #3882f6;
+}
+
+.top {
+  border: 0;
 }
 
 .block4-content .text {
